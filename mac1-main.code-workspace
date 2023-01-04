@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "mac1-main",
+			"path": "."
+		},
+		{
+			"name": "js",
+			"path": "../primer-trabajo-coder-main/js"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>PRESTAMOS</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <!-- comen -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css'>
+  <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
+  <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.2.0/css/all.css'>
+
+
+  <!-- fin -->
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="./css/fondo.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.click').click(function () {
+        $('.popup_box').css("display", "block");
+      });
+      $('.btn1').click(function () {
+        $('.popup_box').css("display", "none");
+      });
+    });
+
+  </script>
+
+  <script>
+
+
+
+
+  </script>
+
+</head>
+
+<body>
+  <header>
+
+    <div class="container__menu">
+      <div class="logo">
+        <img src="/images/logo-dark.png" alt="">
+      </div>
+      <div class="menu">
+        <i class="fas fa-bars" id="btn_menu"></i>
+        <div id="back_menu"></div>
+        <nav id="nav">
+          <img src="images/logo-magtimus-v2.3-1.png" alt="">
+          <ul>
+            <li><a href="#pagina1" id="selected">Inicio</a></li>
+            <li><a href="#pagina2">Solicita Tu Prestamo</a></li>
+            <li><a href="#pagina3">Por Que ALPrestamo</a></li>
+            <li><a href="#pagina4">Testimonios</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </header>
+
+
+  <section class="hero" id="pagina1">
+
+
+    <div class="banner">
+      <div class="capas">
+        <div class="info ban">
+          <h1> Rapido, Seguro, Online,<h2>Tu Prestamo En Un Click.</h2></h1>
+          <figure class="banImg"><img src="/images/bannneees.jpg" alt=""></figure>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="wave wave--bottom"></div>
+  </section>
+
+  <br></br>
+  <main class=" section main">
+    <section class="CAja">
+      <!-- partial:index.partial.html -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="slider-item swiper-slide">
+            <div class="slider-image-wrapper">
+              <img class="slider-image" src="/images/illustration-your-users.svg" alt="SliderImg">
+            </div>
+            <div class="slider-item-content">
+              <h1 class="LE">Evaluamos tu perfil</h1>
+              <p class="PA">En menos de 5 segundos evaluamos tus datos y perfil crediticio</p>
+            </div>
+          </div>
+          <div class="slider-item swiper-slide">
+            <div class="slider-image-wrapper">
+              <img class="slider-image" src="/images/illustration-your-users.svg" alt="SliderImg">
+            </div>
+            <div class="slider-item-content">
+              <h1 class="LE">Resultados Inmediatos</h1>
+              <p class="PA">Nuestro sistema analiza y te muestra las mejores opciones para vos.</p>
+            </div>
+          </div>
+          <div class="slider-item swiper-slide">
+            <div class="slider-image-wrapper">
+              <img class="slider-image" src="/images/illustration-grow-together.svg" alt="SliderImg">
+            </div>
+            <div class="slider-item-content">
+              <h1 class="LE">PRESTAMOS GRANDES</h1>
+              <p class="PA">DEPENDIENDODE TU VIDA CREDITICIA</p>
+            </div>
+          </div>
+          <div class="slider-item swiper-slide">
+            <div class="slider-image-wrapper">
+              <img class="slider-image" src="/images/illustration-flowing-conversation.svg" alt="SliderImg">
+            </div>
+            <div class="slider-item-content">
+              <h1 class="LE">Calcula el prestamo </h1>
+              <p class="PA">En tres segundos</p>
+            </div>
+          </div>
+        </div>
+        <div class="slider-buttons">
+          <button class="swiper-button-prev">Anterior</button>
+          <button class="swiper-button-next">Siguiente</button>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="wave wave--bottom"></div>
+      </div>
+
+
+      <br></br>
+
+      </div>
+
+      <div class="wave wave--top"></div>
+      <br></br>
+      <div class="wave wave--bottom"></div>
+
+
+
+
+      <section class="section section--white">
+        <div class="contenedor_loader">
+          <div id="loader"></div>
+        </div>
+
+        <div class="box" id="pagina2">
+          <div class="container" id="pagina2">
+            <div class="let" id="pagina2"> Calcular Prestamo </div>
+            <form class=" needs-validation" id="formul">
+              <div class="form-row">
+                <div class="input-data">
+
+                  <input type="text" class="form-control      controls" id="monto" placeholder="" required>
+                  <div class="underline"></div>
+                  <label for="">($) Ingresar tu monto del prestamo ($)</label>
+                </div>
+                <div class="input-data">
+
+                  <input type="text" class="form-control    controls" id="interes" placeholder="" required>
+                  <div class="underline"></div>
+                  <label for="">(%) Ingrese el porcentaje de interes (%)</label>
+                </div>
+                <div class="input-data">
+
+                  <input type="text" class="form-control    controls" id="tiempo" placeholder="" required>
+                  <div class="underline"></div>
+                  <label>__Ingresar a cuantos años o meses quieres pagar__</label>
+                </div>
+                <!-- alerta obligatorio -->
+                <div class="form-group mt-2 mb-3 alert alert-danger" hidden id="alert-error"> debes llenar todos los
+                  campos </div>
+                <div class="outer button-w">
+                  <a type="submit" class="boton4" value="" id="btnCalcular" onclick="Mostrar_Ocultar();">  Calcular prestamo</a>
+                </div>
+                <!-- <button type="reset" class="btn btn-secundary" id="ret">BORRAR</button> -->
+
+              </div>
+          </div>
+
+
+          <div class="container-tabla" id="hideResul">
+
+            <table id="lista-tabla" class="table">
+              <div class="cuadrol">
+                <div class="text-tabla">Llene sus datos</div>
+                <form action="" class="Form-u">
+                  <div class="inputBox">
+                    <input type="text" required>
+                    <span>Ingresa tu nombre completo</span>
+                    <i></i>
+                  </div>
+                  <div class="inputBox">
+                    <input type="text" required>
+                    <span>Ingrese su correo </span>
+                    <i></i>
+                  </div>
+                </form>
+              </div>
+              <div class="text-tabla">Este fue el resultado</div>
+              <thead>
+                <tr>
+
+                  <!-- <th>Pagar por Mes</th>
+                                    <th>Capital</th>
+                                    <th>Total de Interés</th>
+                                    <th>Total a Pagar</th> -->
+                  <th>Pagar por Mes</th>
+                  <!-- <th>Capital</th> -->
+                  <th>Total de Interés</th>
+                  <th>Total a Pagar</th>
+                </tr>
+
+              </thead>
+              <tbody></tbody>
+            </table>
+            <div class="bu-c">
+              <button class="boton4" id="BTN-ABRIR-MODAL">¡Obten tu prestamo!</button>
+              <dialog class="MODAL" id="MODAL">
+                <h2>¡Hola!</h2>
+                <p>En lo que dure este Popup te estaremos enviando un mail a tu correo.</p>
+                <button id="BTN-CERRAR-MODAL" class="bu">Cerrar</button>
+              </dialog>
+
+            </div>
+
+          </div>
+        </div>
+
+        </div>
+
+        </div>
+
+        <!-- <a type="button" class="button btn5"  value="">¡obten tu prestamo con un click !</a> -->
+        <!-- <input type="submit" value="X"  onclick="ocultarResul();" id="ocultar"></input> -->
+        </div>
+
+      </section>
+
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <section class="fiN questioN">
+        <br></br>
+        <br></br>
+       <figure class="figuR" > <img src="/images/consultacotizacion.jpg" class=""></figure>
+       <section class="bg-COTIaler botones">
+        <div id="separar">
+          <span href=" " type="button" id="apiBTN" class="Button  boton4  "> CONSULTA LA
+            COTIZACION!</span>
+        </div>
+      </section>
+      <div class="containeRS">
+        <div id="Resulta"></div>
+      </div>
+      <div class="wave wave--bottom"></div>
+    </section>
+
+
+
+
+
+
+
+
+      <br></br>
+
+      <section class="questi">
+          <br></br>
+          <br></br>
+          <h2 class="subtitle">AlPrestamo en números</h2>
+          <h4>Somos una plataforma que conecta personas que necesitan un préstamo con financieras que quieran otorgarlo.
+            Ayudamos a buscar el mejor préstamo para los clientes. Evaluamos su perfil y le recomendamos las mejores
+            opciones</h1>
+
+            <div class="iconsContt">
+              <section class="contadore">
+                <div class="item">
+                  <img src="./images/ahorrar-dinero.png" class="icon" alt="">
+                  <span class="cantidad" id="cont1">0+</span>
+                  <h5>Prestamo Recomenda por mes</h5>
+                </div>
+
+                <div class="item">
+                  <img src="./images/programador.png" class="icon" alt="">
+                  <span class="cantidad" id="cont2">0+</span>
+                  <h5>De los usuarios nos vuelven a elegir.</h5>
+                </div>
+
+                <div class="item">
+                  <img src="./images/casa.png" class="icon" alt="">
+                  <span class="cantidad" id="cont3">0+</span>
+                  <h5>Bancos y Financieras.</h5>
+                </div>
+              </section>
+            </div>
+            <br></br>
+          
+      </section>
+      <div class="wave wave--bottom"></div>
+    </section>
+
+    <br></br>
+    <section class="fin question" id="pagina3">
+      <br></br>
+      
+      <figure class="figuc"> <img src="/images/alprestamo-cellphone (1).jpg" class="figu" alt="">
+        <img src="/images/poerque111.jpg" class="figu" alt=""></figure>
+        <br></br>
+      <br></br>
+      <div class="wave wave--top"></div>
+      <br></br>
+      <div class="wave wave--bottom"></div>
+    </section>
+
+    <br></br>
+     <!-- comentarios -->
+
+    <section class="question " id="pagina4">
+      <div class="comen">
+        <div class="options">
+          <div class="optionN activeN"
+            style="--optionBackground:url(https://thumbs.dreamstime.com/b/hombres-jovenes-felices-19001592.jpg);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <i class="fas fa-walking"></i>
+              </div>
+              <div class="infO">
+                <div class="">Julia sosa</div>
+                <div class="">Estoy muy conforme con AlPrestamo. Fue fácil y rápido.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="optionN"
+            style="--optionBackground:url(https://img.freepik.com/foto-gratis/joven-mujer-colombiana-atractiva-gafas-sol-posando-mientras-pie-junto-al-mar-dia_181624-41580.jpg?w=740&t=st=1672171599~exp=1672172199~hmac=b517af53356f4922739d4448a2f3a740c515ced15a09a29d3b24068be159d845);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <i class="fas fa-walking"></i>
+              </div>
+              <div class="infO">
+                <div class="">Luisa F</div>
+                <div class=""> lo conseguí en 5 minutos sin salir de mi casa.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="optionN"
+            style="--optionBackground:url(https://img.freepik.com/foto-gratis/alegre-mujer-mediana-edad-cabello-rizado_1262-20859.jpg?w=740&t=st=1672171703~exp=1672172303~hmac=fde0a999d3f4f8c52cf6e7d325b2c2940edca8d910f22a1d8b9a4b3892b1444f);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <i class="fas fa-walking"></i>
+              </div>
+              <div class="infO">
+                <div class="">Gabriela Saisedo</div>
+                <div class="">Servicio muy seguro y rápido. Lo mejor es que es totalmente gratis.</div>
+              </div>
+            </div>
+          </div>
+          <div class="optionN"
+            style="--optionBackground:url(https://img.freepik.com/foto-gratis/chica-romantica-sonrisa-astuta-blusa-vintage-sentada-cama-tocando-su-barbilla-mano-retrato-mujer-joven-linda-sonadora-flor-peinado-descansando-dormitorio-manana_197531-3187.jpg?w=740&t=st=1672171650~exp=1672172250~hmac=a9e758dddff659371d889a6f917f137fa95e15354882be919d10b044c23e22f7);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <i class="fas fa-walking"></i>
+              </div>
+              <div class="infO">
+                <div class="">Camila Seguro</div>
+                <div class="">Rapido, Sencillo</div>
+              </div>
+            </div>
+          </div>
+          <div class="optionN"
+            style="--optionBackground:url(https://images.unsplash.com/photo-1539125530496-3ca408f9c2d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <i class="fas fa-walking"></i>
+              </div>
+              <div class="infO">
+                <div class="">Luis Cordoba</div>
+                <div class="">Todo muy practico y facil, 100% seguro</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <div class="wave wave--bottom"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class=" ">
+      <figure class="lg"><img src="/images/logo-dark.png" alt=""></figure>
+      <div class="redes">
+        <i class="fab fa-facebook-f icon1"></i>
+        <i class="fab fa-twitter icon2"></i>
+        <i class="fab fa-instagram icon3"></i>
+      </div>
+      <h6 class="foo">© Copyright 2022 Alprestamo | proyecto para coder house| Roosevelt 1702 (C1428BNF), Colombia</h6>
+
+    </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- menu-->
+  <script src="js/menu.js"></script>
+  <!-- cuadro segundo de datos-->
+  <script src="js/cuacomDatos.js"></script>
+
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js'></script>
+  <script src="js/cuacomDatos.js"></script>
+
+
+  <script src="js/amortizacion.js"></script>
+  <script src="js/moment.js"></script>
+  <script src="js/cargando.js"></script>
+  <!-- alertaboton enviar correo-->
+  <script src="js/btnAlert.js"></script>
+  <!-- alerta -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/sweetAlert.js"></script>
+  <script src="js/terminos.js"></script>
+  <!-- finalerta -->
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js'></script>
+  <script src="./script.js"></script>
+
+  <!-- comentarfinal -->
+
+
+  <script src="js/CoMeNtAr.js"></script>
+
+  <!-- contador de icono-->
+  <script src="js/contadorNU.js"></script>
+  <!--fin -->
+  <!-- contador de icono-->
+  <script src="js/api.js"></script>
+  <!--fin -->
+
+</body>
+
+</html>

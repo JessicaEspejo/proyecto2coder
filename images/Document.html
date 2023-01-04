@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5501/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Document_files/style.css">
+<script>
+
+
+
+// const BTN = document.querySelector('.Btn-Cotizacion')
+
+// BTN.addEventListener('click',(data) => {console.log({data.quotes.USDCOP.end_rate} )})
+
+
+const fetchData = async () =>{
+
+
+
+
+
+fetch('https://api.apilayer.com/currency_data/change?start_date=2022-12-27&end_date=2022-12-28', {
+        method: 'GET',
+        headers: {
+             'apikey':'xikpRY77P7upPgO7vNdS0fynJxOpNJYK'
+        },
+    })
+    .then(function(response) {
+        console.log('response =', response);
+        return response.json();
+    })
+    .then(function(data) {
+ console.log('data = ', data.quotes.USDCOP.end_rate);
+    })
+    .catch(function(err) {
+        console.error(err);
+    });
+    
+
+}
+
+
+
+
+
+
+//-----------------------------------------
+
+
+
+
+    </script></head>
+    
+<body _c_t_common="1">
+
+
+
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+
+        <section class="section">
+            <div class="section__container container">
+              <figure class="section__picture">
+                <img src="./Document_files/alprestamo-publish.jpg" class="section__img">
+              </figure>
+
+      <div class="section__texts">
+        <h2 class="subtitle"> Consultá la cotizacion del dólar oficial, al día de hoy.</h2>
+        <div class="bg-COTIaler">
+          <input type="button" class="BTN  Btn-Cotizacion" value="Ejecutar" id="btnCotizacion" onclick="btnlAlertaCoti()">CONSULTA LA COTIZACION!
+      </div>
+        </div>
+    </div>
+  </section>
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
